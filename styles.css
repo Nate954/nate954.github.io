@@ -1,0 +1,98 @@
+html {
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #ffffff;
+	background-image: url("cityscape.png");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: auto 50%;
+	image-rendering: pixelated;
+}
+
+a:link {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: gold;
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+div.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+ul.navigation {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+	background-color: #333;
+}
+
+ul.navigation li {
+	float: left;
+	display: block;
+	width: 100px;
+	padding-left: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 0;
+	text-align: center;
+}
+
+li a:link, li a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: cyan;
+	text-decoration: none;
+}
+
+li#selected {
+	font-weight: bold;
+	background-color: #555;
+}
+
+div.box {
+	padding: 10px 10px;
+	background-color: #ddd;
+}
+
+.title {
+	height: 88px;
+	margin: 44px auto;
+	text-align: center;
+}
+
+.title img {
+	height: 100%;
+}
+
+@media all and (max-width: 800px) {
+	div.container {
+		width: 100%;
+	}
+	
+	.title {
+		height: 44px;
+		margin: 22px 0px;
+	}
+}
