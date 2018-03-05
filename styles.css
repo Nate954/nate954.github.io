@@ -31,12 +31,6 @@ a:hover {
 	clear: both;
 }
 
-div.container {
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-}
-
 ul.navigation {
 	list-style: none;
 	padding: 0;
@@ -71,9 +65,28 @@ li#selected {
 	background-color: #555;
 }
 
+div.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto auto 30px auto;
+	background-color: #ddd;
+}
+
 div.box {
 	padding: 10px 10px;
-	background-color: #ddd;
+}
+
+div.titleBar {
+	height: 30px;
+	background-color: #333;
+}
+
+div.titleBar span {
+	color: white;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 
 .title {
@@ -88,11 +101,12 @@ div.box {
 
 @media all and (max-width: 800px) {
 	div.container {
-		width: 100%;
+		width: 90%;
+		margin-bottom: 10px;
 	}
 	
 	.title {
 		height: 44px;
-		margin: 22px 0px;
+		margin: 22px auto;
 	}
 }
